@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="board-Control">
+        <h1>Tic-Tac-Toe</h1>
+        <div class="turn-container">
+            <div class="turn-box align align1">X</div>
+            <div class="turn-box align">O</div>
+            <div class="bg"></div>
+        </div>
+       
+
+        <section class="main-Board">  
+            <div class="playValue">
+                <p class="selection"></p>
+                <p class="score-Board"></p>
+                <p class="game-Draw"></p>
+            </div>  
+            <div class="main-grid">
+                <div class="box align">0</div>
+                <div class="box align">1</div>
+                <div class="box align">2</div>
+                <div class="box align">3</div>
+                <div class="box align">4</div>
+                <div class="box align">5</div>
+                <div class="box align">6</div>
+                <div class="box align">7</div>
+                <div class="box align">8</div>    
+            </div>
+            <div class="changeGamemode_Control">
+                <button class="change-Game-mode">Change Game Mode</button>
+                <button onclick="window.location.reload()" class="resetBtn"><img src="resetimg.png" alt="" width="30px" height="30px"></button>
+            </div>
+        </section>
+    
+        <section class="for-Win-page">
+            <h3 id="results1"></h3>
+            <h3 id="results"></h3>
+            <button id="play-again" onClick="palyAgain()">Play Again</button>
+        </section>
+
+        <div id="scoreboar">
+        </div>
+        <section class="for-Welcome-page">
+            <div>
+                <p>Welcome to my</p>
+                <p>Tic-Tac-Toe</p>
+                <p>Game</p>
+                <div class="for-Gamemode">
+                    <label for="">Select Game Mode</label>
+                    <select id="gameMode">
+                        <option value="human" selected>Player 1 vs Player 2</option>
+                        <option value="hard">Player 1 vs Computer</option>
+                    </select>
+                </div>
+                <button class="welcome-Play-button">Play</button>
+            </div>
+        </section>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
